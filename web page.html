@@ -40,18 +40,20 @@
 		   top: 300px;
 		   margin: 15px;
 		   padding: 10px 20px;
-		   background-color: #b1dff9;
+		   background: repeating-linear-gradient(to left, rgb(109, 181, 230), rgb(40, 131, 250)
+		   , rgb(97, 217, 238),rgb(6, 161, 189),rgb(37, 77, 170));
+		   transition-property: all;
 		   color: black;
 		   font-family: 'Trebuchet MS';
 		   border-width: 2px;
 		   border-style: inset;
-		   border-color: #646668;
+		   border-color:rgb(102, 107, 114);
 		   font-weight: 900;
 		   font-size: 20px;
 		   box-shadow: 5px 10px 10px black; 
-		  
 		  }
-
+	
+         /*Log in*/
 	     #new5 {
          position: absolute;
 		 text-decoration: none;
@@ -73,7 +75,7 @@
          box-shadow: 2px 2px 12px whitesmoke;
 		 transition: 0.2s;		 
 	  }
-	    
+	    /*sign in*/
 		 #new6 {
 		 position: absolute;
 		 text-decoration: none;
@@ -95,45 +97,70 @@
 		 } 
 		 
          body {
-		   background-image: url("F:/PASSWORD/pro.jpg");
+		   background-image: url("https://www.shutterstock.com/shutterstock/videos/23685691/thumb/1.jpg?ip=x480");
 		   background-attachment: scroll;
 		   background-position: auto;
-		   background-size: auto;	
+		   background-size: cover;
+		   backdrop-filter: blur(1px);
+
 		  } 
-		 
          .new7 {
          font-family: 'sans-serif';
-         font-size: 55px;
+         font-size: 50px;
 		 font-weight: 900;
-         color: #b299ee;
+		 font-weight: bold;
+         color: white;
 		 position: absolute;
 		 top: -10px;
 		 left: 55px;
-		 text-shadow: 5px 5px 15px hsl(248, 54%, 55%);
+		 text-shadow: 1px 2px 5px hsl(249, 5%, 71%);
         }	
-		 
+		#quick{
+			color: white;
+			font-size: 48px;
+		}
+        span{
+			color: rgb(9, 71, 241);
+			font-size: 55px;
+			text-shadow: #598be9;
+		}
+		 /*get now*/
 		  #new4:hover{
 			  opacity: 0.9;
-			  box-shadow: 10px 10px 10px #151618;
+			  box-shadow: 2px 2px 10px #598be9;
+			  transition: 0.1s;
 		  }
-         
+		  /*log in*/
 		  #new5:hover{
 			  background-color: #44cb3c;
-			  box-shadow: 5px 5px 12px #4bd341;
+			  box-shadow: 5px 2px 15px  #4bd341;
 			  opacity: 1;
 		  }
-
+		  /*sign in*/
 		 #new6:hover{
 			   background-color: #44cb3c;
-			   box-shadow: 5px 5px 12px #4bd341;
+			   box-shadow: 2px 2px 15px  #4bd341;
 			   opacity: 1;
 		  }
-		  
 		  .new7:hover{
 		     font-size: 54.5px;
-			 color: #b299ee;
-			 text-shadow:  2px 2px 5px #4f16d3 ;
+			 color: #ffffff;
+			 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
 		 }  
+		 #quick:hover{
+			   text-shadow: 1px 1px 20px #dee9ee;
+               text-transform: none;
+               transition: 0.2s;
+               transition-property: all;
+               font-size: 130%;
+		 }
+		 span:hover{
+			   text-shadow: 1px 1px 10px rgb(0, 174, 255, 10);
+               text-transform: none;
+               transition: 0.2s;
+			   transition-property: all;
+               font-size: 130%;
+		 }
 	   </style>
   </head>
 <body>
@@ -145,8 +172,7 @@
   <header>
 	<a href="web page 4.html"id="new5">Sign In</a>
 	 <a href="web page 3.html"id="new6">Log In</a>
-	 <p class="new7">Quick CODING</p>
-	 <p class="new8"></p>
+	 <p class="new7"><span id="quick">Quick</span><span>CODING</span></p>
   </header>
 </body>
 </html>  
